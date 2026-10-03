@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rong-than-piston
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PISTON_PORT
+        value: 2000
